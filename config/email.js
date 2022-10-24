@@ -1,13 +1,10 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer')
 
 module.exports.email = nodemailer.createTransport({
-
-    host: "",
-    port: "",
+    host: '',
+    port: '',
     auth: {
-      user: "",
-      pass: ""
-    }
-
-    
-  });
+        user: '',
+        pass: '',
+    },
+})
