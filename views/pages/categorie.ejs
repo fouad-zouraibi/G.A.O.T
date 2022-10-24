@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="..\public\stylesheets\style.css">
+  </head>
+<body>
+  
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        E-commerce
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="/ecommerce">home</a>
+      <a href="/ecommerce/products">Products</a>
+      <a href="/ecommerce/categories" >Catalogue</a>
+      <a href="/ecommerce/cart" >card</a>
+      <!--<a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>-->
+    </div>
+  </div>
+  
+  <div class="content">
+  <div class="title">
+      <h1>Categories</h1>
+  </div>
+  
+  <div class="cards">
+    <% for(var i=0; i < data.data.length; i++) { %>
+        <div class="card">
+            <img src="..\public\images\produits\accessories-men-wallet-watches-fragrance-vman-still-life-daniel-lindh-03.jpg" alt="Denim Jeans" style="width:100%">
+            <h1><%= data.data[0].cat.titre %></h1>
+            <p class="price"></p>
+            <p></p>
+            <p><a href="/ecommerce/categories/products/<%= data.data[0].cat.id %>"><button>products</button></a></p>
+          </div>
+      <% } %>
+  </div>
+     
+</div>
+
+</body>
+</html>
+
