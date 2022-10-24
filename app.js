@@ -16,7 +16,7 @@ var produitRouter = require('./routes/boutique/produit.route')
 var categorieProduitRouter = require('./routes/boutique/categorie.route')
 var commandeRouter = require('./routes/boutique/commande.route')
 var cardRouter = require('./routes/boutique/card.route')
-var homeRouter = require('./routes/boutique/ecommerce.routeroute')
+var homeRouter = require('./routes/boutique/ecommerce.route')
 
 // ************* Boutique Routes *************
 
