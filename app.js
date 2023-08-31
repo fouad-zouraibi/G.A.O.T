@@ -28,6 +28,8 @@ app.set('views', path.join(__dirname, 'views'))
 //app.set('view engine', 'jade');
 app.set('view engine', 'ejs')
 
+// this is a comments to test ti commit works with ssh
+
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
